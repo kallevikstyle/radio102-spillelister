@@ -1,0 +1,5 @@
+
+@mixin header-vertical-align($height) {
+    height: $height;
+    margin-top: ($header-height - $height) / 2;
+}

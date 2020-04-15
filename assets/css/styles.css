@@ -12,8 +12,28 @@ main {
   margin: 0 auto;
 }
 
-.col-md-2,
-.col-md-10 {
+h1 {
+  font-family: "Raleway", arial, sans-serif;
+  font-weight: 100;
+}
+
+.page-header {
+  background-color: #000;
+  height: 150px;
+}
+
+.page-header__logo {
+  background-image: url("../images/logo.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 100px;
-  border: 1px dashed red;
+  margin-top: 25px;
+}
+
+.page-header__title {
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  margin-top: 50px;
 }

@@ -2,5 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 @import url('../css/bootstrap.min.css');
 @import 'partials/variables';
+@import 'partials/mixins';
 @import 'partials/base';
+@import 'partials/modules/header';
 @import 'partials/modules/time-selector';
