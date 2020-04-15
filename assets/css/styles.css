@@ -11,3 +11,9 @@ main {
   border: 1px dashed red;
   margin: 0 auto;
 }
+
+.col-md-2,
+.col-md-10 {
+  height: 100px;
+  border: 1px dashed red;
+}
