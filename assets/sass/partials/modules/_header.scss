@@ -7,7 +7,7 @@
         background-position: center center;
         background-size: contain;
         background-repeat: no-repeat;
-        @include header-vertical-align(100px); 
+        @include header-vertical-align(80px); 
     }
     &__title {
         color: $bg-color;
