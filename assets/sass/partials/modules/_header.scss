@@ -1,6 +1,6 @@
 .page-header {
     background-color: $copy-color;
-    height: $header-height;
+    min-height: $header-height;
 
     &__logo {
         background-image: url('../images/logo.png');

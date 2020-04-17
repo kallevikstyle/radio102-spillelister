@@ -21,7 +21,7 @@ h1 {
 
 .page-header {
   background-color: #000;
-  height: 150px;
+  min-height: 150px;
 }
 
 .page-header__logo {
