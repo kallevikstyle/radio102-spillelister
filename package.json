@@ -3,7 +3,7 @@
     "private": true,
     "browserslist": [
         "defaults"
-      ],
+    ],
     "devDependencies": {
         "autoprefixer": "^9.7.6",
         "grunt": "^1.1.0",

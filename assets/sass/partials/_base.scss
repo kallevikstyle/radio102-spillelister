@@ -10,6 +10,7 @@ body {
 main {
     margin: 0 auto;
 }
+
 %headings {
     font-family: $raleway;
     font-weight: 100;
@@ -20,4 +21,16 @@ h1 {
 }
 h2 {
     @extend %headings;
+}
+
+// Forms
+label {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+}
+select {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.5rem;
 }
