@@ -22,6 +22,18 @@
     &__input-prepend {
         font-size: 1.5rem;
         width: 85px;
+    }
+    &__result {
+        margin-top: $header-margin;
         
+    }
+    &__table {
+        font-family: $ubuntu;
+        th {
+            width: 50%;
+        }
+        td {
+            width: 50%;
+        }
     }
 }
