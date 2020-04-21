@@ -40,7 +40,7 @@ function getTotalHours(hours) {
         console.log(timeSequence.details);
 
         // Hide time-selector section
-        timeSelector.classList.add('d-none');
+        // timeSelector.classList.add('d-none');
 
         // Show time-adjustment section
 

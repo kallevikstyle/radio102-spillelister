@@ -3,8 +3,8 @@ body {
     font-weight: 400;
     font-size: 16px;
 }
-.page-header + * {
-    margin-top: 40px;
+.page-header {
+    margin-bottom: $header-margin;
 }
 
 main {

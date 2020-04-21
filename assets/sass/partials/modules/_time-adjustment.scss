@@ -1,0 +1,27 @@
+.time-adjustment {
+
+    &__backBtn {
+        position: absolute;
+        left: 5px;
+        margin-top: -#{$header-margin - 5px};
+        
+    }
+    &__title {
+        @extend .time-selector__title;
+    }
+    &__input-group {
+        font-family: $ubuntu;
+        input {
+            font-size: 1.5rem;
+            text-align: center;
+        }  
+    }
+    &__input-group-header {
+        width: 83px;
+    }
+    &__input-prepend {
+        font-size: 1.5rem;
+        width: 85px;
+        
+    }
+}

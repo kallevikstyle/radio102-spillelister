@@ -18,7 +18,7 @@
     </header>
     <main id="main" role="main">
         <!-- Time selector -->
-        <section class="time-selector">
+        <section class="time-selector d-none">
             <h2 class="time-selector__title">Velg sekvens</h2>
             <div class="container">
                 <div class="row justify-content-center">
@@ -92,12 +92,46 @@
                         <button type="button" class="btn btn-primary btn-lg time-selector__btn" id="getHours">Start</button>
                     </div>
                 </div>
+            </form>         
+        </section>
+        <!-- Time adjustment -->
+        <section class="time-adjustment">
+            <button type="button" class="btn btn-outline-secondary time-adjustment__backBtn" id="backBtn">&lt;&lt; Tilbake</button>
+            <h2 class="time-adjustment__title">Tilpass timene</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <!-- Input group header -->
+                        <div class="input-group time-adjustment__input-group">
+                            <span class="time-adjustment__input-group-header"></span>
+                            <input type="text" readonly class="form-control-plaintext" value="Min">
+                            <input type="text" readonly class="form-control-plaintext" value="Sek">
+                            <input type="text" readonly class="form-control-plaintext" value="Ms">
+                        </div>
+                        <!-- Input groups -->
+                        <div class="input-group time-adjustment__input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text time-adjustment__input-prepend">00:00</span>
+                            </div>
+                            <input type="text" class="form-control" id="" placeholder="min">
+                            <input type="text" class="form-control" id="" placeholder="sek">
+                            <input type="text" class="form-control" id="" placeholder="ms">
+                        </div>
+                        <div class="input-group time-adjustment__input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text time-adjustment__input-prepend">01:00</span>
+                            </div>
+                            <input type="text" class="form-control" id="" placeholder="min">
+                            <input type="text" class="form-control" id="" placeholder="sek">
+                            <input type="text" class="form-control" id="" placeholder="ms">
+                        </div>
+                        <button type="button" class="btn btn-danger btn-lg btn-block time-adjustment__calculate" id="calcBtn">Beregn</button>
+                        
+                    </div>
+                </div>
             </form>
 
                 
-        </section>
-        <section>
-
         </section>
     </main>
     <script type="text/javascript" src="assets/js/script.js"></script>
