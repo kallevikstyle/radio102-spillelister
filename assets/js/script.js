@@ -31,9 +31,10 @@ function getTotalHours(hours) {
         let totalHours = 0,
             totalMs = 0;
 
-        // Add total hours and ms to module
+        // Calculate total hours and milliseconds
         totalHours = getTotalHours(selectedHours);
         totalMs = totalHours * 3600000;
+        // Add total hours and ms to module
         timeSequence.details.totalHours = totalHours;
         timeSequence.details.expectedMs = totalMs;
         console.log(timeSequence.details);
