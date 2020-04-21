@@ -24,7 +24,8 @@ function getTotalHours(hours) {
 
     // Event listener for getHours button
     getHours.addEventListener('click', function(e) {
-        const fromHour = document.querySelector('#fromHour'),
+        const timeSelector = document.querySelector('.time-selector'),
+            fromHour = document.querySelector('#fromHour'),
             toHour = document.querySelector('#toHour'),
             selectedHours = [fromHour.value, toHour.value];
         let totalHours = 0,
@@ -36,6 +37,11 @@ function getTotalHours(hours) {
         timeSequence.details.totalHours = totalHours;
         timeSequence.details.expectedMs = totalMs;
         console.log(timeSequence.details);
+
+        // Hide time-selector section
+        timeSelector.classList.add('d-none');
+
+        // Show time-adjustment section
 
     });
     
