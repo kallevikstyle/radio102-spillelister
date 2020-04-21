@@ -21,16 +21,15 @@ h1 {
 }
 h2 {
     @extend %headings;
+    color: $heading-color;
 }
-
+.btn {
+    // font-family: $raleway;
+}
 // Forms
 label {
-    display: block;
-    text-align: center;
-    font-size: 2rem;
+    // font-size: 2rem;
 }
 select {
-    display: block;
-    margin: 0 auto;
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
 }

@@ -20,74 +20,81 @@
         <!-- Time selector -->
         <section class="time-selector">
             <h2 class="time-selector__title">Velg sekvens</h2>
-            <form class="container">
+            <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-3">
-                        <label for="from-hour">Fra og med</label>
+                    <div class="col-md-6">
+                        <form class="form-horizontal row justify-content-center">
+                            <div class="form-group col-sm-4 col-md-6 col-lg-4 text-center">
+                                <label class="time-selector__label" for="from-hour">Fra og med</label>
 
-                        <select class="time-selector__from" id="fromHour">
-                            <option value="00:00:00">00</option>
-                            <option value="01:00:00">01</option>
-                            <option value="02:00:00">02</option>
-                            <option value="03:00:00">03</option>
-                            <option value="04:00:00">04</option>
-                            <option value="05:00:00">05</option>
-                            <option value="06:00:00">06</option>
-                            <option value="07:00:00">07</option>
-                            <option value="08:00:00">08</option>
-                            <option value="09:00:00">09</option>
-                            <option value="10:00:00">10</option>
-                            <option value="11:00:00">11</option>
-                            <option value="12:00:00">12</option>
-                            <option value="13:00:00">13</option>
-                            <option value="14:00:00">14</option>
-                            <option value="15:00:00">15</option>
-                            <option value="16:00:00">16</option>
-                            <option value="17:00:00">17</option>
-                            <option value="18:00:00">18</option>
-                            <option value="19:00:00">19</option>
-                            <option value="20:00:00">20</option>
-                            <option value="21:00:00">21</option>
-                            <option value="22:00:00">22</option>
-                            <option value="23:00:00">23</option>
-                        </select>
+                                <select class="time-selector__hours form-control" id="fromHour">
+                                    <option value="00:00:00">00</option>
+                                    <option value="01:00:00">01</option>
+                                    <option value="02:00:00">02</option>
+                                    <option value="03:00:00">03</option>
+                                    <option value="04:00:00">04</option>
+                                    <option value="05:00:00">05</option>
+                                    <option value="06:00:00">06</option>
+                                    <option value="07:00:00">07</option>
+                                    <option value="08:00:00">08</option>
+                                    <option value="09:00:00">09</option>
+                                    <option value="10:00:00">10</option>
+                                    <option value="11:00:00">11</option>
+                                    <option value="12:00:00">12</option>
+                                    <option value="13:00:00">13</option>
+                                    <option value="14:00:00">14</option>
+                                    <option value="15:00:00">15</option>
+                                    <option value="16:00:00">16</option>
+                                    <option value="17:00:00">17</option>
+                                    <option value="18:00:00">18</option>
+                                    <option value="19:00:00">19</option>
+                                    <option value="20:00:00">20</option>
+                                    <option value="21:00:00">21</option>
+                                    <option value="22:00:00">22</option>
+                                    <option value="23:00:00">23</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-4 col-md-6 col-lg-4 text-center">
+                                <label class="time-selector__label" for="to-hour">Til og med</label>
+
+                                <select class="time-selector__hours form-control" id="toHour">
+                                    <option value="00:00:00">00</option>
+                                    <option value="01:00:00">01</option>
+                                    <option value="02:00:00">02</option>
+                                    <option value="03:00:00">03</option>
+                                    <option value="04:00:00">04</option>
+                                    <option value="05:00:00">05</option>
+                                    <option value="06:00:00">06</option>
+                                    <option value="07:00:00">07</option>
+                                    <option value="08:00:00">08</option>
+                                    <option value="09:00:00">09</option>
+                                    <option value="10:00:00">10</option>
+                                    <option value="11:00:00">11</option>
+                                    <option value="12:00:00">12</option>
+                                    <option value="13:00:00">13</option>
+                                    <option value="14:00:00">14</option>
+                                    <option value="15:00:00">15</option>
+                                    <option value="16:00:00">16</option>
+                                    <option value="17:00:00">17</option>
+                                    <option value="18:00:00">18</option>
+                                    <option value="19:00:00">19</option>
+                                    <option value="20:00:00">20</option>
+                                    <option value="21:00:00">21</option>
+                                    <option value="22:00:00">22</option>
+                                    <option value="23:00:00">23</option>
+                                </select>
+                            </div>
+                        </form>
                     </div>
-                    
-                    <div class="col-md-3">
-                        <label for="to-hour">Til og med</label>
-
-                        <select class="time-selector__to" id="toHour">
-                            <option value="00:00:00">00</option>
-                            <option value="01:00:00">01</option>
-                            <option value="02:00:00">02</option>
-                            <option value="03:00:00">03</option>
-                            <option value="04:00:00">04</option>
-                            <option value="05:00:00">05</option>
-                            <option value="06:00:00">06</option>
-                            <option value="07:00:00">07</option>
-                            <option value="08:00:00">08</option>
-                            <option value="09:00:00">09</option>
-                            <option value="10:00:00">10</option>
-                            <option value="11:00:00">11</option>
-                            <option value="12:00:00">12</option>
-                            <option value="13:00:00">13</option>
-                            <option value="14:00:00">14</option>
-                            <option value="15:00:00">15</option>
-                            <option value="16:00:00">16</option>
-                            <option value="17:00:00">17</option>
-                            <option value="18:00:00">18</option>
-                            <option value="19:00:00">19</option>
-                            <option value="20:00:00">20</option>
-                            <option value="21:00:00">21</option>
-                            <option value="22:00:00">22</option>
-                            <option value="23:00:00">23</option>
-                        </select>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 text-center">
+                        <button type="button" class="btn btn-primary btn-lg">Start</button>
                     </div>
                 </div>
             </form>
-            <div id="getHours" class="time-selector__btn">
-                <a href=#>Start</a>
-            </div>
+
+                
         </section>
         <section>
 

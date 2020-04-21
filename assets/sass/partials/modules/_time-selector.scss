@@ -2,13 +2,24 @@
 
     &__title {
         text-align: center;
-        color: $heading-color;
-    }
-    &__from {
+        margin-bottom: 40px;
         
     }
-    &__to {
-        
+    &__label {
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+    &__hours {
+        max-width: 60px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 1.5rem;
+    }
+    .btn {
+        font-size: 2rem;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
     }
 }
 
