@@ -1,3 +1,15 @@
+// MODULE
+const timeSequence = (function() {
+    let details = {
+        totalHours: 0
+    }
+
+    return {
+        details
+    }
+})();
+
+// Calculate total hours
 function getTotalHours(hours) {
     const fromHour = new Date("01/01/2007 " + hours[0]).getHours(),
         toHour = new Date("01/01/2007 " + hours[1]).getHours();
@@ -15,7 +27,8 @@ function getTotalHours(hours) {
             toHour = document.querySelector('#toHour'),
             selectedHours = [fromHour.value, toHour.value];
 
-        getTotalHours(selectedHours);
+        timeSequence.details.totalHours = getTotalHours(selectedHours);
+        console.log(timeSequence.details);
 
     });
     
