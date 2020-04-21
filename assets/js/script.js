@@ -1,7 +1,9 @@
 // MODULE
 const timeSequence = (function() {
     let details = {
-        totalHours: 0
+        totalHours: 0,
+        expectedMs: 0,
+
     }
 
     return {
@@ -15,7 +17,6 @@ function getTotalHours(hours) {
         toHour = new Date("01/01/2007 " + hours[1]).getHours();
 
     return ((toHour - fromHour) + 1);
-
 }
 
 (function () {
@@ -26,8 +27,14 @@ function getTotalHours(hours) {
         const fromHour = document.querySelector('#fromHour'),
             toHour = document.querySelector('#toHour'),
             selectedHours = [fromHour.value, toHour.value];
+        let totalHours = 0,
+            totalMs = 0;
 
-        timeSequence.details.totalHours = getTotalHours(selectedHours);
+        // Add total hours and ms to module
+        totalHours = getTotalHours(selectedHours);
+        totalMs = totalHours * 3600000;
+        timeSequence.details.totalHours = totalHours;
+        timeSequence.details.expectedMs = totalMs;
         console.log(timeSequence.details);
 
     });
