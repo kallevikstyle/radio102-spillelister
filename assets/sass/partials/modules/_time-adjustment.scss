@@ -1,5 +1,5 @@
 .time-adjustment {
-
+    font-size: $text-lg;
     &__backBtn {
         position: absolute;
         left: 5px;
@@ -12,7 +12,7 @@
     &__input-group {
         font-family: $ubuntu;
         input {
-            font-size: 1.5rem;
+            font-size: $text-lg;
             text-align: center;
         }  
     }
@@ -20,8 +20,11 @@
         width: 83px;
     }
     &__input-prepend {
-        font-size: 1.5rem;
+        font-size: $text-lg;
         width: 85px;
+    }
+    &__calculate {
+        font-size: $text-lg;
     }
     &__result {
         margin-top: $header-margin;
