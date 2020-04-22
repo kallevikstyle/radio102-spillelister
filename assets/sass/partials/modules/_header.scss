@@ -1,28 +1,14 @@
 .page-header {
     background-color: $copy-color;
-    min-height: $header-height;
     &__nav {
        
         ul {
-            margin: 0 auto;
-        }
-    }
-
-    &__logo {
-        background-image: url('../images/logo.png');
-        background-position: center center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        @include header-vertical-align(80px);
-        a {
-            display: block;
-            height: 100%;
+            margin-left: 40px;
         }
     }
     &__title {
         color: $bg-color;
         text-align: center;
-        @include header-vertical-align(50px);
     }
 
     // BOOTSTRAP OVERRIDES

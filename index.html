@@ -8,22 +8,26 @@
     <meta name="author" content="Asbj&oslash;rn Kallevik">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
    
-	<script src="https://kit.fontawesome.com/c25775ac46.js"></script>
+	<!-- <script src="https://kit.fontawesome.com/c25775ac46.js"></script> -->
 </head>
 <body>
     <header class="page-header" role="banner">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="[ col-md-2 page-header__logo ]"><a href="index.html" title="Home" role="link"></a></div>
-                <div class="[ col-md-8 page-header__title ]"><h1>Tilpassing&nbsp;av&nbsp;spillelister</h1></div>
-            </div>
-        </div>
+        
         <!-- Navigation -->
-        <nav class="page-header__nav navbar navbar-expand-sm navbar-dark">
+        <nav class="page-header__nav navbar navbar-expand-md navbar-dark">
+            <!-- Navbar toggle -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Hjem</a>
                     </li>
+                    <!-- Tools dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Tools
@@ -33,7 +37,14 @@
                         </div>
                     </li>
                 </ul>
+            </div>
         </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- <div class="[ col-md-2 page-header__logo ]"><a href="index.html" title="Home" role="link"></a></div> -->
+                <div class="[ col-md-12 page-header__title ]"><h1>Tilpassing&nbsp;av spillelister</h1></div>
+            </div>
+        </div>
     </header>
     <main id="main" role="main">
         <!-- Time selector -->
