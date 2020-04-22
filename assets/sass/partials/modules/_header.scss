@@ -1,9 +1,13 @@
 .page-header {
     background-color: $copy-color;
     min-height: $header-height;
-    &__toggle {
-        // color: $bg-color;
+    &__nav {
+       
+        ul {
+            margin: 0 auto;
+        }
     }
+
     &__logo {
         background-image: url('../images/logo.png');
         background-position: center center;

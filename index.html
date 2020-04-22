@@ -12,17 +12,33 @@
 </head>
 <body>
     <header class="page-header" role="banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="[ col-md-2 page-header__logo ]"><a href="index.html" title="Home" role="link"></a></div>
+                <div class="[ col-md-8 page-header__title ]"><h1>Tilpassing&nbsp;av&nbsp;spillelister</h1></div>
+            </div>
+        </div>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-sm navbar-dark">
+        <nav class="page-header__nav navbar navbar-expand-sm navbar-dark">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Hjem</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tools</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Hjem</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tools
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tilpassing av spillelister</a>
+                        </div>
+                    </li>
                 </ul>
         </nav>
     </header>
     <main id="main" role="main">
         <!-- Time selector -->
         <section class="time-selector">
+            
             <h2 class="time-selector__title">Velg sekvens</h2>
             <div class="container">
                 <div class="row justify-content-center">
@@ -158,7 +174,7 @@
         </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
