@@ -20,4 +20,15 @@
         text-align: center;
         @include header-vertical-align(50px);
     }
+
+    // BOOTSTRAP OVERRIDES
+    .nav-item:hover {
+        background-color: lighten($copy-color, 15%);
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: $white;
+        &:hover {
+            color: $white;
+        }
+    }
 }
