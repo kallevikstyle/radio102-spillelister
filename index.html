@@ -142,23 +142,7 @@
                             <input type="text" readonly class="form-control-plaintext" value="Ms">
                         </div>
                         <!-- Input groups -->
-                        <!-- <div class="input-group time-adjustment__input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text time-adjustment__input-prepend">00:00</span>
-                            </div>
-                            <input type="text" class="form-control" id="" placeholder="min">
-                            <input type="text" class="form-control" id="" placeholder="sek">
-                            <input type="text" class="form-control" id="" placeholder="ms">
-                        </div>
-                        <div class="input-group time-adjustment__input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text time-adjustment__input-prepend">01:00</span>
-                            </div>
-                            <input type="text" class="form-control" id="" placeholder="min">
-                            <input type="text" class="form-control" id="" placeholder="sek">
-                            <input type="text" class="form-control" id="" placeholder="ms">
-                        </div>
-                        <button type="button" class="btn btn-danger btn-lg btn-block time-adjustment__calculate" id="calcBtn">Beregn</button> -->
+                        
                         
                     </div>
                 </div>
@@ -170,11 +154,14 @@
                             <tbody>
                                 <tr>
                                     <th class="text-right">Målvarighet:</th>
-                                    <td>8 timer</td>
+                                    <td id="targetDuration"></td>
                                 </tr>
                                 <tr>
                                     <th class="text-right">Nåværende varighet:</th>
-                                    <td>8 timer</td>
+                                    <td id="currentDuration"></td>
+                                </tr>
+                                <tr class="table-info">
+                                    <td colspan="2" class="text-center" id="durationDiff"></td>
                                 </tr>
                             </tbody>
                         </table>
