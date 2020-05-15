@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<title>Tilpasse timer &horbar; Radio102</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+    <meta name="author" content="Asbj&oslash;rn Kallevik">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+</head>
+<body>
+    <header class="page-header" role="banner">
+        
+        <!-- Navigation -->
+        <nav class="page-header__nav navbar navbar-expand-md navbar-dark">
+            
+            <!-- Navbar toggle -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="Logo">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Hjem</a>
+                    </li>
+                    <!-- Tools dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tools
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Tilpassing av spillelister</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- <div class="[ col-md-2 page-header__logo ]"><a href="index.html" title="Home" role="link"></a></div> -->
+                <div class="[ col-md-12 page-header__title ]"><h1>Tilpassing&nbsp;av spillelister</h1></div>
+            </div>
+        </div>
+    </header>
+    <main id="main" role="main">
+        <!-- Time adjustment -->
+        <section class="time-adjustment d-none">
+            <!-- Back button -->
+            <a class="btn btn-outline-primary time-adjustment__backBtn" href="index.html" id="backBtn" role="button">&lt;&lt; Tilbake</a>
+            <h2 class="time-adjustment__title">Tilpass timene</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6" id="time-inputs">
+                        <!-- Input group header -->
+                        <div class="input-group time-adjustment__input-group">
+                            <span class="time-adjustment__input-group-header"></span>
+                            <input type="text" readonly class="form-control-plaintext" value="Min">
+                            <input type="text" readonly class="form-control-plaintext" value="Sek">
+                            <input type="text" readonly class="form-control-plaintext" value="Ms">
+                        </div>
+                        <!-- Input groups -->
+                        
+                    </div>
+                </div>
+                <!-- Result -->
+                <div class="row justify-content-center">
+                    <div class="col-md-10 time-adjustment__result">
+                        <h2 class="time-adjustment__title">Resultat</h2>
+                        <table class="table table-hover time-adjustment__table">
+                            <tbody>
+                                <tr>
+                                    <th class="text-right">Målvarighet:</th>
+                                    <td id="targetDuration"></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-right">Nåværende varighet:</th>
+                                    <td id="currentDuration"></td>
+                                </tr>
+                                <tr class="table-info">
+                                    <td colspan="2" class="text-center" id="durationDiff"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
